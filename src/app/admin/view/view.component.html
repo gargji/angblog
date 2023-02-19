@@ -1,0 +1,74 @@
+
+
+<section class="dashboard-wrap mtb-40">
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+                <div class="col-md-3">
+                    
+                  <app-sidebar></app-sidebar>
+                    <!-- <div class="dash-left">
+                        <ul>
+                            <li class="active"><a href="/admin/dashboard" class="active">Dashboard</a></li>
+                            <li><a href="/admin/blogs">Blogs</a></li>
+                        
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </div>    -->
+                </div>
+                <div class="col-md-9">
+                    <div class="dash-right">
+                        <div class="dash-header">
+                            <div class="dash-title ">
+                                <h1>Blogs</h1>
+                            </div>
+                            <div class="dash-nav">
+                                <a routerLink="/admin-createblog" class="btn btn-success bi bi-person-plus-fill">add blogs</a>
+                            </div>
+                        </div>
+                        <div style="overflow-x: auto;">
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th>#ID</th>
+                                
+                                <th>Title</th>
+                                <th>description</th>
+                                <th>Image</th>
+                                <!-- <th>Posted On</th> -->
+                                <!-- <th>Action</th> -->
+                            </tr> 
+                          
+                                <tr > 
+                                    <!-- <td></td> -->
+                                    <td> {{blogviewdata._id}} </td>
+                                    <td> {{blogviewdata.title}} </td>
+                                    <td> {{blogviewdata.description}} </td>
+                                    <td> 
+                                        <img src={{blogviewdata.image.url}} alt="">
+                                    </td>
+                                   <!--  <td><img src="assets/images/img1.jpg" ></td>
+                                    <td>Sample blog post 1</td>
+                                    <td>Technology</td>
+                                    <td>October 22, 2018</td> -->
+                                    <!-- "['blogdetails/',d._id]" -->
+                                    <!-- id show ke liye anchor tag me -->
+                                    <!-- <td> <a [routerLink]="['/blog_view/',d._id]" class="btn btn-success bi bi-eye">view</a>
+                                        <a [routerLink]="['/blog_edit/',d._id]"class="btn btn-info bi bi-pencil">edit</a>
+                                        
+                                         <a (click)="blogdelete(d._id)" class="btn btn-danger bi bi-trash text-white">delete</a>
+                                    </td> -->
+                                </tr>
+                               
+
+                           
+                        
+                           
+                        </table>
+                    </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,30 @@
+<!-- <p>contact works!</p> -->
+<section class="cmspage mtb-40">
+    <div class="container">
+      <div class="page-desc">
+        <div class="row justify-content-center">
+          <div class="col-md-8 photo">
+            <h1 class="text-center">Contact</h1>
+            <h3 class="text-center">{{data1}}</h3>
+            <form [formGroup]="form1" (ngSubmit)="contactdata()">
+              <div class="form-group">
+                <input type="text" formControlName="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="text" formControlName="email" class="form-control" placeholder="E-Mail">
+              </div>
+              <div class="form-group">
+                <input type="text" formControlName="phone" class="form-control" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <textarea formControlName="message" rows="5" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-primary " type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

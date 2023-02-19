@@ -1,0 +1,115 @@
+{
+  "blogs": [
+    {
+      "title": "vikash",
+      "description": "hello gwalior",
+      "image": "//images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=365&q=80",
+      "id": 6
+    },
+    {
+      "title": "vikashtrg",
+      "description": "hello gwalior",
+      "image": "//images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=365&q=80",
+      "id": 7
+    },
+    {
+      "title": "vikashtrgfgggggggg",
+      "description": "hello gwalior",
+      "image": "//images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=365&q=80",
+      "id": 8
+    }
+  ],
+  "category": [
+    {
+      "title": "shrma",
+      "description": "hello mumbai",
+      "id": 1
+    }
+  ],
+  "register": [
+    {
+      "name": "rahul",
+      "email": "hihh",
+      "password": "yhyu",
+      "id": 1
+    },
+    {
+      "name": "bvhb",
+      "email": "vhjvh",
+      "password": "hb",
+      "id": 2
+    },
+    {
+      "name": "Rahul garg",
+      "email": "hgfnh",
+      "password": "gfnfgntgmjh",
+      "id": 3
+    },
+    {
+      "name": "egrhb",
+      "email": "gsg",
+      "password": "hgdfh",
+      "id": 4
+    },
+    {
+      "name": "gdrfh",
+      "email": "fhdh",
+      "password": "fjt",
+      "id": 5
+    },
+    {
+      "name": "yhugvgyu",
+      "email": "gfcghcgh",
+      "password": "",
+      "id": 6
+    },
+    {
+      "name": "yhugvgyu",
+      "email": "gfcghcgh",
+      "password": "yuguy",
+      "id": 7
+    },
+    {
+      "name": "x",
+      "email": "xx",
+      "password": "x",
+      "id": 8
+    },
+    {
+      "email": "s",
+      "password": "s",
+      "id": 9
+    },
+    {
+      "email": "s",
+      "password": "s",
+      "id": 10
+    }
+  ],
+  "contact": [
+    {
+      "name": "rahul",
+      "email": "jgyugsy",
+      "phone": 566565,
+      "message": "kuudz",
+      "id": 1
+    },
+    {
+      "name": "rahul",
+      "email": "jgyugsy",
+      "phone": "566565",
+      "message": "kuudz",
+      "id": 2
+    },
+    {
+      "name": "s",
+      "email": "s",
+      "phone": "s",
+      "message": "s",
+      "id": 3
+    }
+  ],
+  "about": {
+    "text": "\tCreate a property in the component class named profileForm and set the property to a new form group instance. To initialize the form group, provide the constructor with an object of named keys mapped to their control.\nFor the profile form, add two form control instances with the names firstName and lastName.\nsrc/app/profile-editor/profile-editor.component.ts (form group)\ncontent_copy\nimport { Component } from '@angular/core';\nimport { FormGroup, FormControl } from '@angular/forms';\n\n@Component({\n  selector: 'app-profile-editor',\n  templateUrl: './profile-editor.component.html',\n  styleUrls: ['./profile-editor.component.css']\n})\nexport class ProfileEditorComponent {\n  profileForm = new FormGroup({\n    firstName: new FormControl(''),\n    lastName: new FormControl(''),\n  });\n}\nThe individual form controls are now collected within a group. A FormGroup instance provides its model value as an object reduced from the values of each control in the group. A form group instance has the same properties (such as value and untouched) and methods (such as setValue()) as a form control instance.\nAssociate the FormGroup model and view\tA form group tracks the status and changes for each of its controls, so if one of the controls changes, the parent control also emits a new status or value change. The model for the group is maintained from its members. After you define the model, you must update the template to reflect the model in the view"
+  }
+}

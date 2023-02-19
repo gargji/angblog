@@ -1,0 +1,60 @@
+
+<!-- <p>display works!</p> -->
+<section class="dashboard-wrap mtb-40">
+    <div class="container">
+        <div class="body-content">
+            <div class="row">
+              <div class="col-md-3">
+                <app-sidebar></app-sidebar>
+                    <!--  <div class="dash-left">
+                        <ul>
+                            <li class="active"><a routerLink="/admin-dashboard">Dashboard</a></li>
+                            <li><a routerLink="/admin-display" class="active">Blogs</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>    -->
+                </div>
+                <div class="col-md-9">
+                    <div class="dash-right">
+                        <div class="dash-header">
+                            <div class="dash-title">
+                                <h1>contact</h1>
+                            </div>
+                            <!-- <div class="dash-nav">
+                                <a routerLink="/admin-createblog" class="btn btn-success">Add Post</a>
+                            </div> -->
+                        </div>
+                        <div class="table table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th>#ID</th>
+                                <!-- <th>Image</th> -->
+                                <th>name</th>
+                                <th>email</th>
+                                <!-- <th>Posted On</th> -->
+                                <th>phone</th>
+                                <th>messege</th>
+                                <th>action</th>
+                            </tr>
+                            <tr *ngFor="let d of data1"> 
+                                <td>{{d._id}}</td>
+                                <td>{{d.name}}</td>
+                                <!-- <td><img src={{d.image}} ></td> -->
+                                <td>{{d.email}}</td>
+                                <td>{{d.phone}}</td>
+                                <td>{{d.message}}</td>
+                                <!-- <td>October 22, 2018</td> -->
+                                <td>
+                                    <!-- <a  [routerLink]="['/register_edit/',d.id]" class="btn btn-info btn-sm">Edit</a> -->
+                                    <a  (click)="condelete(d._id)"  class="btn btn-danger btn-sm text-light">Delete</a>
+                                </td>
+                          
+                        </table></div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
