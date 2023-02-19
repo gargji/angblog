@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class AdminServiceService {
 
-  // url ="http://localhost:3000/api/"
-  url="https://blog-bkg2.onrender.com/api/"
+  url ="http://localhost:3000/api/"
+  // url="https://blog-bkg2.onrender.com/api/"
 
 
   msg:any

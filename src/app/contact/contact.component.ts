@@ -32,10 +32,11 @@ contactdata(){
   // console.log(this.form1.value)
   this.s.coninsert(this.form1.value).subscribe((res)=>{
   // this.router.navigate(['/'])
-  console.log(res)
+  // console.log(res)
   this.data=res
   this.data1=this.data.message
-  console.log(this.data1)
+  this.form1.reset();
+  // console.log(this.data1)
   })
 
  
